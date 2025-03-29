@@ -15,7 +15,8 @@ import support from "../assets/support.svg";
 import database from "../assets/database.svg";
 
 const ServiceCard = styled(Card)(() => ({
-  height: "260px",
+  // height: "25vh",
+  height: "100%",
   transition: "transform 0.3s",
   position: "relative",
   overflow: "hidden",
@@ -87,7 +88,7 @@ const ServiceCardComponent = () => {
               <Typography
                 variant="h4"
                 component="h2"
-                sx={{ mt: 2, color: "#FFFFFF" }}
+                sx={{ mt: 1, color: "#FFFFFF" }}
               >
                 Бухгалтерский учет
               </Typography>
@@ -118,7 +119,7 @@ const ServiceCardComponent = () => {
               <Typography
                 variant="h4"
                 component="h2"
-                sx={{ mt: 2, color: "#55595c" }}
+                sx={{ mt: 1, color: "#55595c" }}
               >
                 Автоматизация
               </Typography>
