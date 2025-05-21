@@ -52,7 +52,7 @@ const infoDetailCards = [
     icon: <img src={report} width="50px" height="50px" />,
     title: "Подготовка и сдача отчетности",
     description:
-      "Доверьте нам подготовку и сдачу всех необходимых отчетов и деклараций, включая НДФЛ. Мы гарантируем, что документы будут поданы вовремя и без ошибок, минимизируя риск налоговых штрафов и обеспечивая прозрачность финансовой деятельности вашей компании.",
+      "Подготовка и сдача деклараций 3-НДФЛ для вычетов, других деклараций и отчетов, когда не требуется полное бухгалтерское сопровождение. Мы гарантируем, что документы будут поданы без ошибок, минимизируя риск налоговых штрафов и обеспечивая прозрачность финансовой деятельности.",
   },
   {
     icon: <img src={database} width="50px" height="50px" />,
@@ -121,7 +121,7 @@ const ServiceCardComponent = () => {
                 component="h2"
                 sx={{ mt: 1, color: "#55595c" }}
               >
-                Автоматизация
+                Автоматизация учета
               </Typography>
               <Typography variant="body1" sx={{ mt: 2, color: "#000000" }}>
                 Оптимизируйте свои учетные процессы с помощью наших передовых
@@ -138,10 +138,19 @@ const ServiceCardComponent = () => {
           <Grid item xs={12} sm={4} key={index}>
             <DetailCard>
               <CardContent>
-                <Box sx={{ mb: 2, color: "#FFD700" }}>{service.icon}</Box>
-                <Typography variant="h5" component="h3" sx={{ pb: 2 }}>
-                  {service.title}
-                </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 2,
+                    mb: 2,
+                  }}
+                >
+                  <Box sx={{ color: "#FFD700" }}>{service.icon}</Box>
+                  <Typography variant="h5" component="h3">
+                    {service.title}
+                  </Typography>
+                </Box>
                 <Typography variant="body2">{service.description}</Typography>
               </CardContent>
             </DetailCard>

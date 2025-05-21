@@ -14,18 +14,17 @@ const HeroComponent = () => {
           variant="h1"
           component="h1"
           sx={{
-            color: "#747b8e",
+            color: "#2D3748",
             textAlign: "center",
             fontWeight: 700,
-            fontSize: { xs: "1.8rem", md: "2.8rem" },
-            textTransform: "uppercase",
-            letterSpacing: "0.2em",
-            borderBottom: "4px solid #FFD700",
-            paddingBottom: "20px",
-            marginBottom: "20px",
+            fontSize: { xs: "3rem", md: "5.2rem" },
+            fontFamily: "'Pacifico', cursive",
+            padding: "11px 30px",
+            margin: "15px auto",
+            position: "relative",
           }}
         >
-          Бухгалтерские услуги
+          Бухучет и Автоматизация
         </Typography>
       </Container>
     </Hero>

@@ -23,6 +23,9 @@ const theme = createTheme({
 
 const PageWrapper = styled(Box)(() => ({
   background: "linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%)",
+  display: "flex",
+  flexDirection: "column",
+  minHeight: "100vh",
 }));
 
 const MainPage = () => {
